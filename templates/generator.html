@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include 'head.html' %}
+{% include 'nav.html' %}
+    <header>
+      <h1 class="grand title">Generate a New Daily Vital</h1>
+      <h3 class="grand title">Set your parameters!</h3>
+    </header>
+
+    <main>
+    <form id="generating-form" action="/generating" method="post">
+      <ol id="options">
+        <li class="option">
+          <h4 class="grand">Hink Pink Count : </h4><input type="range" name="hinkpink_count" min="0" max="50" value="10" onchange="updateHinkPinkCountTextInput(this.value);" /><input type="text" id="hinkPinkCountTextInput" value="10">
+        </li>
+        <li class="option">
+          <h4 class="grand">Hink Pink Type : </h4>
+          <input type="radio" name="hinkpink_type" value="thinkable" checked>
+            <section class="tooltip radio-option">Thinkable Puzzles
+              <span class="tooltiptext">Random Hink Pinks scraped from <a href="thinkablepuzzles.com">thinkablepuzzles.com</a></span>
+            </section><br>
+          <input type="radio" name="hinkpink_type" value="generated">
+          <section class="tooltip radio-option">Hink Pink Generator Optimized
+            <span class="tooltiptext">Random Hink Pinks made from an algorithm that tries the most similar synonyms as combinations</span>
+          </section><br>
+          <input type="radio" name="hinkpink_type" value="brute-generated">
+          <section class="tooltip radio-option">Hink Pink Generator Brute Force
+            <span class="tooltiptext">Random Hink Pinks made from an algorithm that tries all known synonyms as combinations</span>
+          </section><br>
+          <input type="radio" name="hinkpink_type" value="random">
+          <section class="tooltip radio-option">Random Mix
+            <span class="tooltiptext">Random Hink Pinks from <a href="thinkablepuzzles.com">thinkablepuzzles.com</a>, the optimized generator, and the brute force generator</span>
+          </section><br>
+        </li>
+        <li class="option">
+          <h4 class="grand">Conversation List Count : </h4><input type="range" name="conversation_count" min="0" max="20" value="5" onchange="updateConversationCountTextInput(this.value);" /><input type="text" id="conversationCountTextInput" value="5">
+        </li>
+        <li class="option" id="generator-submit">
+          <h3 class="grand title">Submit</h3>
+        </li>
+      </ol>
+    </form>
+    <section id="generating">
+      <h1 class="grand title">Generating</h1><section class="loader"></section>  
+    </section>
+    </main>
+
+    <footer>
+      <p>Information Scraped from: <a href="https://www.riddles.com/riddle-of-the-day">riddles.com</a>, <a href="https://www.onthisday.com/">onthisday.com</a>, <a href="https://www.brainyquote.com/quote_of_the_day">brainyquote.com</a>, <a
+        href="https://nationaltoday.com/what-is-today/">nationaltoday.com</a>, <a href="https://weather.com/weather/hourbyhour/l/8cd1a4fdf1a3fddbdd025b0f20f49602aa7fc5b410cf85c2866e485bd1e375e4">weather.com</a>, <a
+        href="https://www.astrology.com/">astrology.com<a>, <a href="http://www.thinkablepuzzles.com">thinkablepuzzles.com</a></p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/darktoggle.js') }}"></script>
+  </body>
+
+</html>

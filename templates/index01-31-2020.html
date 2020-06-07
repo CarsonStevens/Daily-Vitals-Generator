@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+{% include 'head.html' %}
+
+<body>
+  {%include 'nav.html' %}
+  <header>
+    <table id="heading">
+      <tr>
+        <td>
+          <h1 class="grand"><img src="{{ url_for('static', filename='images/ERC-Home-Logo.png') }}" class="logo" /> Daily Vitals</h1>
+          <h2 class="grand">Friday</br>January 31<sup class="th">th</sup>, 2020</h2>
+        </td>
+        <td>
+          <section class="weather">
+            <table class="forecast">
+              <caption>Weather Forecast</caption>
+              <tbody>
+                <tr>
+                  <th>Time</th>
+                  <th>Temperature</th>
+                  <th>Wind</th>
+                </tr>
+                <tr>
+                  <td>8:00 <em class="meridiem">am</em></td>
+                  <td>N/A</td>
+                  <td>N/A<em class="speed"></em></td>
+                </tr>
+                <tr>
+                  <td>11:00 <em class="meridiem">am</em></td>
+                  <td>N/A</td>
+                  <td>N/A<em class="speed"></em></td>
+                </tr>
+                <tr>
+                  <td>1:00 <em class="meridiem">pm</em></td>
+                  <td>N/A</td>
+                  <td>N/A<em class="speed"></em></td>
+                </tr>
+                <tr>
+                  <td>6:00 <em class="meridiem">pm</em></td>
+                  <td>45&deg</td>
+                  <td>WNW 8 <em class="speed">mph</em></td>
+                </tr>
+              <tbody>
+            </table>
+          </section>
+        </td>
+      </tr>
+    </table>
+  </header>
+  <main>
+    <table class="column-format">
+      <tbody>
+        <tr>
+          <td colspan="3">
+            <section id="daily-info">
+              <section class="daily-info-wrapper">
+                <section id="national-days">
+                  <h4 class="grand">National Days</h4>
+                  <ol>
+                    <li>National Hot Chocolate Day </li>
+                    <li>National Fun at Work Day</li>
+                  </ol>
+                </section>
+              </section>
+              <section class="daily-info-wrapper">
+                <section id="birthdays">
+                  <h4 class="grand">Famous Birthdays</h4>
+                  <ol>
+                    <li>Thomas Merton</li>
+                    <li>Tallulah Bankhead</li>
+                    <li>Justin Timberlake</li>
+                    <li>John Lydon</li>
+                    <li>Jackie Robinson</li>
+                  </ol>
+                </section>
+              </section>
+              <section class="daily-info-wrapper">
+                <section id="riddle">
+                  <h4 class="grand">Riddle</h4>
+                  <p>I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?</p>
+                </section>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <section id="day-in-history">
+              <h3 class="grand">This Day in History</h3>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1560 ~ </strong>Spanish King Philip II marries Elisabeth van Valois</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1679 ~ </strong>Jean-Baptiste Lully's opera "Bellerophon" premieres at the Palais-Royal in Paris</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1842 ~ </strong>10th US President John Tyler's daughter Elizabeth marries in the White House</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1865 ~ </strong>General Robert E. Lee named Commander-in-Chief of Confederate Armies during US Civil War</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1943 ~ </strong>Field Marshal Friedrich Paulus surrenders to Soviet troops at Stalingrad</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1949 ~ </strong>1st daytime soap on TV "These Are My Children" (NBC in Chicago)</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1950 ~ </strong>US President Harry Truman publicly announces support for the development of a hydrogen bomb</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1957 ~ </strong>Actress Elizabeth Taylor's 2nd divorce from actor Michael Wilding</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1960 ~ </strong>Songwriter Adolph Green marries actress and singer Phyllis Newman in NYC</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1985 ~ </strong>South African President P. W. Botha offers to free Nelson Mandela if he denounces violence</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">2015 ~ </strong>17 year old Lydia Ko of New Zealand becomes the youngest golfer in men's or women's golf history to be ranked No. 1 in the world</p>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <section id="conversation">
+              <h3 class="grand">Conversation Starters</h3>
+              <ul>
+                <li>What was the worst book you had to read for school? How about the best book you had to read for school?</li>
+                <li>Does technology simplify life or make it more complicated?</li>
+                <li>What's the best gift you have ever given?</li>
+                <li>If you could bring back one TV show that was canceled, which one would you bring back?</li>
+                <li>What was the best invention of the last 50 years?</li>
+              </ul>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h3 class="grand" style="text-align: center">Quotes</h3>
+            <section id="quotes">
+              <section class="quote-wrapper">
+                <h5 class="grand">Quote of the Day</h5>
+                <p>We must make the best of those ills which cannot be avoided.<span class="poet"> ~ Clarence Day</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Love Quote of the Day</h5>
+                <p>I was adored once too.<span class="poet"> ~ William Shakespeare</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Art Quote of the Day</h5>
+                <p>Art is Art. Everything else is everything else.<span class="poet"> ~ Ad Reinhardt</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Nature Quote of the Day</h5>
+                <p>All are but parts of one stupendous whole, Whose body Nature is, and God the soul.<span class="poet"> ~ Alexander Pope</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Funny Quote of the Day</h5>
+                <p>For your information, I would like to ask a question.<span class="poet"> ~ Samuel Goldwyn</span></p>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <section id="horoscope">
+              <h3 class="grand">Horoscopes</h3>
+              <section class="horoscope">
+                <h4 class="grand">Aires</h4>
+                <p> Keep busy in the morning, but make sure to save some time this afternoon so you can daydream about your future. It might sound silly to schedule in some fantasy time, but it's not. Your imagination and creativity require
+                  maintenance, and today you'll have the time you need to do it. If you're in a relationship, think about where you want to go next. The future for you two will be greatly influenced by what you want it to be, so start imagining
+                  things in as much detail as possible.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Taurus</h4>
+                <p> There is no reason to worry about where you stand in your social circle, especially right now when your insight and ideas are what everyone is craving most. You need to have a little bit more faith that you are still loved by your
+                  friends! If you're feeling insecure, just reach out to someone you know will be able to set you straight. There has been some weird stuff going on lately, but it has nothing to do with you, even if you feel like they've been taking
+                  it out on you.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Gemini</h4>
+                <p> Just because the advice that your friends and family gave you wasn't what you were hoping to hear doesn't mean that you shouldn't still follow it. In fact, it means you should follow it all the more! These people know you and love
+                  you. They want you to be happy, and they just told you how they think you can get there. What do you have to lose by trusting them? Their objectivity gives them a good point of view on your situation. They see things without all the
+                  emotions attached.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Cancer</h4>
+                <p> You're could be dealing with a very rigid personality today, and like it or not, you're going to have to help them learn to be flexible. But all you need to do is be patient with them. Once you understand that they have a sort of
+                  a handicap, you'll be able to give them the compassion they really need to start respecting the needs of other people more. They have to understand that everything can't go exactly the way they want it to all the time. You can show
+                  them how.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Leo</h4>
+                <p> There could be a fun little drama popping into your life today, and it could toss a monkey wrench into your carefully made plans. But so what? Plans are made to be rearranged sometimes. And you could use a little lesson in
+                  flexibility. Be as adaptable as you possibly can in the situation and keep smiling. This isn't going to be a big deal unless you make it a big deal. Creating more emotional distance from the negative energy will free you from having
+                  to worry.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Virgo</h4>
+                <p> You may not find all the answers you're looking for today, but you'll definitely learn something new if you keep your mind open. If someone says something that makes you want to gasp, hold back your indignation. Accept the fact
+                  that just because they feel that way doesn't mean they're intent on getting you to agree with them. Feeling threatened by different types of people is only a waste of time. You're much better off respecting them and adopting a "live
+                  and let live" attitude.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Libra</h4>
+                <p> The romantic areas of your life are going to get a lot more attention from the universe today. Whether or not you actually have a partner in your life right now is irrelevant. The barriers between you and other people are falling
+                  away, and suddenly you're in intimate quarters with a powerful person. People will want to be as close to you as you let them, so try to take advantage of it. Adhere to your strict sense of honesty and don't make any promises you
+                  don't intend to keep.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Scorpio</h4>
+                <p> Overreaction could be a factor in your day, and you have to be prepared for someone's unexpected emotional outbursts. And keep in mind that that outburst could come from you! You can't anticipate how things will go today, so don't
+                  waste time worrying about it. You will only end up stressing yourself out. The better strategy is to carry on as you normally would and deal with stuff as it comes. Being confident that you can put out fires is better than trying to
+                  predict them.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Sagittarius</h4>
+                <p> A friend is trying to take their relationship with you to a deeper level, and you should take them seriously. Don't just go along with their plans unless you also want them to be a bigger part of your life. Think long and hard
+                  about this, because once you make that connection, you're going to be committed. If there are any doubts in your mind, you have to put the brakes on as quickly as possible. You care enough about them to be honest, after all.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Capricorn</h4>
+                <p> You can't control how other people perceive you. You can control how you present yourself. These are two very different things. People assess things based on their own prejudices and preconceptions, so if they don't respond to
+                  your presentation or speech the way you'd hoped, you can't take it personally! You did your best. You gave them the message and they misinterpreted it. Ask them questions to keep the conversation going and clarify your perspective.
+                </p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Aquarius</h4>
+                <p> Your ambition is growing, but you need to make sure it doesn't get in your way today! When making choices about your social life, you shouldn't be factoring in your boss or co-workers, at least not right now. Keep the line between
+                  your private life and your professional life boldly drawn. Crossing over right now would be very unwise. It would do harm to both spheres. Stop focusing on your bottom line so much, and start spreading your attention across all
+                  areas of your life.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Pisces</h4>
+                <p> Do you feel like no one is leveling with you right now? Turn to your closest friends for all the reality checks you need. They can always be counted on to tell you the truth and help you get rid of unrealistic fantasies. The
+                  sobering dose of reality that one of them gives you today will be just the kick in the pants you need to make a few changes in your life. Show some appreciation for their dependability by treating them to a small gift or dinner out.
+                </p>
+              </section>
+            </section>
+          </td>
+          <td>
+            <section id="chinese">
+              <h3 class="grand">Chinese Horoscopes</h3>
+              <section class="horoscope">
+                <h4 class="grand">Ox</h4>
+                <p> Have you been acting like a bratty teenager lately? While you're normally so mild mannered, you might feel like mouthing off to the powers that be if you're not happy with the way they're treating you. Careful! You don't want to
+                  end up looking like a child in front of influential people.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Sheep</h4>
+                <p> Don't try to deny it: You've been utterly closed off from your loved ones lately. But hold on, we're not scolding. It's just that sometimes this can be a sign you're in need of help. Other times, it just means you need a break
+                  from people. Which is it? Be honest with yourself about the answer.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Rat</h4>
+                <p> Sometimes you just have to be the bigger person no matter how much you'd rather act like a toddler. Healing and closure won't happen unless you decide to pull yourself up by your bootstraps and just move on. No sense in wasting
+                  any more time arguing or fighting demons from the past.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Snake</h4>
+                <p> Maybe you haven't been the nicest friend lately. It can be easy for you to get wrapped up in your own worries and problems, but it can translate as cool detachment or even snobbishness to some. Try to work on being warmer and
+                  friendlier to the ones you love. They're picking up on your negative vibrations and they don't like them.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Dragon</h4>
+                <p> Extend the olive branch to someone you've been on the outs with. It's possible you and this person didn't even have a big blowout. Perhaps you slowly drifted apart over time, or your relationship got worn away by gossip or rumors
+                  that degraded your respect for one another. See if there's something to salvage. You might be surprised.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Tiger</h4>
+                <p> It's time to figure out how much you're spending and where you could be saving more. Don't feel bad. You're not the only one in a financial crisis. It's possible to squirrel away some dough, but you'll probably need to come up
+                  with a better plan than your current one. Crunch some numbers over a cup of coffee today.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Rabbit</h4>
+                <p> You might be feeling overwhelmed by your social life right now. Just craving solitude? You don't need to make excuses. Just tell your pals that you're in recuperation mode and need some downtime. It's better to be honest than to
+                  bail on people at the last minute when you don't feel like going out.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Horse</h4>
+                <p> You can't put a bandage on a leaking faucet, broken dishwasher, or cracked radiator. Call someone in to help, for goodness sake. Maybe your problem is more of an emotional one, but that doesn't change how you should address it.
+                  Professionals know what they're doing. You, my friend, probably don't.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Monkey</h4>
+                <p> No need to be hard on yourself for past mistakes. All you need to do is right your wrongs and move on. Remember, no one is as critical of you as you are of yourself. Get things out in the open, apologize if necessary, and then let
+                  it go.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Rooster</h4>
+                <p> Nagging worries about your future could be threatening your peace of mind lately. Put them to rest as best you can by coming up with a plan. Whether it's a financial plan, a living situation plan, or a plan to get back your ex,
+                  being prepared is the best offense.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Dog</h4>
+                <p> Trust is a hard thing to build, and it can break instantly. Where in your life should you be trusting more and worrying less? What or who should you not trust? Ponder these questions as they relate to your relationships and
+                  personal life. You probably already have the answers deep down.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Pig</h4>
+                <p> Everything is going to be okay. It always is. Stop worrying about the future and things you can't control. Now is a time when you need to trust. Know that life has a plan for you and that what is meant to be will be. Sure, it
+                  sounds a little trite, but just have faith in your instincts. You'll ride this one out, too.</p>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h4 class="grand" style="text-align: center">Word Puzzles</h4>
+            <section id="word-puzzles">
+              <section class="word-puzzle-wrapper">
+                <section id="hink-pinks">
+                  <h4 class="grand">Hink Pinks</h4>
+                  <ol>
+                    <li>Penitentiary letters</li>
+                    <li>Boat voyage</li>
+                    <li>A promise to grow</li>
+                    <li>Colorless escargot</li>
+                    <li>Phoney pain</li>
+                    <li>A birds foot defect</li>
+                    <li>Lard Pot</li>
+                    <li>Syrup collector</li>
+                    <li>Street frog</li>
+                    <li>Silent fighting</li>
+                  </ol>
+                </section>
+              </section>
+              <section class="word-puzzle-wrapper">
+                <section id="commonyms">
+                  <h4 class="grand">Commonyms</h4>
+                  <ol>
+                    <li>Arthur - Kong - Herod</li>
+                    <li>Base - Beach - Billiard</li>
+                    <li>Coat - Spice - Bicycle</li>
+                    <li>Green - Black - Iced</li>
+                    <li>Rain - Black - Enchanted</li>
+                    <li>Short - Bus - Rest</li>
+                    <li>Hound - Bull - Sheep</li>
+                    <li>Iron - Bronze - Stone</li>
+                    <li>Blood - IQ - Ink Blot</li>
+                    <li>Burns - Angles - Temperatures</li>
+                  </ol>
+                </section>
+              </section>
+              <section class="word-puzzle-wrapper">
+                <section id="mad-gabs">
+                  <h4 class="grand">Mad Gabs</h4>
+                  <ol>
+                    <li>Al of Try Ankle</li>
+                    <li>Ape Arrows Uncle As His</li>
+                    <li>Any Lack Tricked Bull Hank Hit</li>
+                    <li>Ape Any Fur Youth Halts</li>
+                    <li>Ask Rude Arrive H</li>
+                  </ol>
+                </section>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <section id="bamboozables">
+              <h4 class="grand">Bamboozables</h4><img id="bamboozable-img" src="http://www.thinkablepuzzles.com/bamboozables/bamboozable34.jpg" />
+            </section>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <h3 class="grand" id="answer-page">Answers</h3>
+  <section id="answers">
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Hink Pinks</h4>
+      <ol class="answer-style">
+        <li>Jail Mail</li>
+        <li>Ship Trip</li>
+        <li>Growth Oath</li>
+        <li>Pale Snail</li>
+        <li>Fake Ache</li>
+        <li>Claw Flaw</li>
+        <li>Fat Vat</li>
+        <li>Sap Trap</li>
+        <li>Road Toad</li>
+        <li>Quiet Riot</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Commonymns</h4>
+      <ol class="answer-style">
+        <li>kings</li>
+        <li>balls</li>
+        <li>they have racks</li>
+        <li>teas</li>
+        <li>forests</li>
+        <li>types of stops</li>
+        <li>dogs</li>
+        <li>ages in the history of man</li>
+        <li>tests</li>
+        <li>measured in degree</li>
+        <ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Mad Gabs</h4>
+      <ol class="answer-style">
+        <li>A Love Triangle</li>
+        <li>A pair of sunglasses</li>
+        <li>An Electric Blanket</li>
+        <li>A Penny For Your Thoughts</li>
+        <li>A Screwdrive</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Bamboozables</h4>
+      <ol class="answer-style">
+        <li>High IQ</li>
+        <li>Misunderstanding</li>
+        <li>Backwards Somersault</li>
+        <li>No One is Perfect</li>
+        <li>Upwards Battle</li>
+        <li>Times Up</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Riddle</h4>
+      <p>Fire.</p>
+    </section>
+  </section>
+  <script type="text/javascript" src="{{ url_for('static', filename='javascript/darktoggle.js') }}"></script>
+</body>
+
+</html>

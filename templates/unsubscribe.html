@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include 'head.html' %}
+{% include 'nav.html' %}
+    <header>
+      <h1 class="grand title">Unsubscribe</h1>
+    </header>
+
+    <main>
+      <section id="subscribe-time-picker">
+        <form id="subscribe-form" action="/unsubscribe/unsubscribed" method="post">
+          <h3 class="instructions">Enter the email to unsubscribe from: </h3>
+          <input id="email" type="email" placeholder="Enter your email"  name="email"/>
+          <section id="unsubscribe-btn">
+            <h3 class="grand title">Unsubscribe</h3>
+          </section>
+        </form>
+
+      </section>
+      <section id="subscribe-success">
+        <h3 class="grand title">{{ unsubscribe_info }}</h3>
+      </section>
+    </main>
+
+    <footer>
+      <p>Information Scraped from: <a href="https://www.riddles.com/riddle-of-the-day">riddles.com</a>, <a href="https://www.onthisday.com/">onthisday.com</a>, <a href="https://www.brainyquote.com/quote_of_the_day">brainyquote.com</a>, <a
+        href="https://nationaltoday.com/what-is-today/">nationaltoday.com</a>, <a href="https://weather.com/weather/hourbyhour/l/8cd1a4fdf1a3fddbdd025b0f20f49602aa7fc5b410cf85c2866e485bd1e375e4">weather.com</a>, <a
+        href="https://www.astrology.com/">astrology.com<a>, <a href="http://www.thinkablepuzzles.com">thinkablepuzzles.com</a></p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/darktoggle.js') }}"></script>
+  </body>
+
+</html>

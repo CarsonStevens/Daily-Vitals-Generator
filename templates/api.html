@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include 'head.html' %}
+{% include 'nav.html' %}
+    <header>
+      <h1 class="grand title">Daily Vitals Generator</h1>
+      <h3 class="grand title">API Documentation</h3>
+    </header>
+
+    <main>
+      <article id="api-article">
+        <h3 class="grand title">Famous Birthdays</h3>
+        <span class="post">POST to: "/famous_birthdays"</span>
+        <span class="response"></span>
+      </article>
+    </main>
+
+    <footer>
+      <p>Information Scraped from: <a href="https://www.riddles.com/riddle-of-the-day">riddles.com</a>, <a href="https://www.onthisday.com/">onthisday.com</a>, <a href="https://www.brainyquote.com/quote_of_the_day">brainyquote.com</a>, <a
+        href="https://nationaltoday.com/what-is-today/">nationaltoday.com</a>, <a href="https://weather.com/weather/hourbyhour/l/8cd1a4fdf1a3fddbdd025b0f20f49602aa7fc5b410cf85c2866e485bd1e375e4">weather.com</a>, <a
+        href="https://www.astrology.com/">astrology.com<a>, <a href="http://www.thinkablepuzzles.com">thinkablepuzzles.com</a></p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/darktoggle.js') }}"></script>
+  </body>
+
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">{% include 'head.html' %}{% include 'nav.html' %}<header>
+  <table id="heading">
+    <tr>
+      <td>
+        <h1 class="grand title"><img src="{{ url_for('static', filename='images/ERC-Home-Logo.png') }}" class="logo" /> Daily Vitals</h1>
+        <h2 class="grand title">Sunday</br>February 02<sup class="th">th</sup>, 2020</h2>
+      </td>
+      <td>
+        <section class="weather">
+          <table class="forecast">
+            <caption class="title">Weather Forecast</caption>
+            <tbody>
+              <tr>
+                <th>Time</th>
+                <th>Temperature</th>
+                <th>Wind</th>
+              </tr>
+              <tr>
+                <td>8:00 <em class="meridiem">am</em></td>
+                <td>N/A</td>
+                <td>N/A<em class="speed"></em></td>
+              </tr>
+              <tr>
+                <td>11:00 <em class="meridiem">am</em></td>
+                <td>45&deg</td>
+                <td>SSW 10 <em class="speed">mph</em></td>
+              </tr>
+              <tr>
+                <td>1:00 <em class="meridiem">pm</em></td>
+                <td>64&deg</td>
+                <td>SSW 12 <em class="speed">mph</em></td>
+              </tr>
+              <tr>
+                <td>6:00 <em class="meridiem">pm</em></td>
+                <td>70&deg</td>
+                <td>SSW 15 <em class="speed">mph</em></td>
+              </tr>
+            <tbody>
+          </table>
+        </section>
+      </td>
+    </tr>
+  </table>
+</header>
+<main>
+  <table class="column-format">
+    <tbody>
+      <tr>
+        <td colspan="3">
+          <section id="daily-info">
+            <section class="daily-info-wrapper">
+              <section id="national-days">
+                <h4 class="grand title">National Days</h4>
+                <ol>
+                  <li>Groundhog Day </li>
+                  <li>Super Bowl Sunday</li>
+                  <li>Candlemas Day</li>
+                  <li>National Hedgehog Day</li>
+                  <li>National Tater Tot Day</li>
+                  <li>National Ukulele Day</li>
+                </ol>
+              </section>
+            </section>
+            <section class="daily-info-wrapper">
+              <section id="birthdays">
+                <h4 class="grand title">Famous Birthdays</h4>
+                <ol>
+                  <li>James Joyce</li>
+                  <li>Havelock Ellis</li>
+                  <li>Ayn Rand</li>
+                  <li>Ina Garten</li>
+                </ol>
+              </section>
+            </section>
+            <section class="daily-info-wrapper">
+              <section id="riddle">
+                <h4 class="grand title">Riddle</h4>
+                <p>A man rode out of town on Sunday, he stayed a whole night at a hotel and rode back to town the next day on Sunday. How is this possible?</p>
+              </section>
+            </section>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <section id="day-in-history">
+            <h3 class="grand title">This Day in History</h3>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1653 ~ </strong>New Amsterdam becomes a city (later renamed New York)</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1848 ~ </strong>Treaty of Guadalupe Hidalgo ends the Mexican-American War: US acquires Texas, California, New Mexico and Arizona for $15 million</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1870 ~ </strong>American writer (Huckleberry Finn) Samuel Langhorne Clemens, pen name Mark Twain, (34) marries Olivia Langdon (24) in Elmira, NY</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1893 ~ </strong>1st movie close-up (of a sneeze), Edison studio, West Orange, New Jersey</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1901 ~ </strong>Queen Victoria's Funeral takes place in St. George's Chapel, Windsor Castle, England</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1904 ~ </strong>US blues singer Gertrude Pridgett marries comic William Rainey</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1922 ~ </strong>James Joyce's "Ulysses" published in Paris (1,000 copies)</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1936 ~ </strong>Physicist Emilio G. Segrè (31) weds jewish woman Elfriede Spiro at the Great Synagogue of Rome in Italy</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1943 ~ </strong>German 6th Army surrenders after Battle of Stalingrad in a major turning point in Europe during World War II</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1971 ~ </strong>Idi Amin ousts Milton Obote and appoints himself President (dictator) of Uganda</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">1974 ~ </strong>Barbra Streisand's 1st #1 hit, "The Way We Were"</p>
+            </section>
+            <section class="history-wrapper">
+              <p class="history-context"><strong class="year">2014 ~ </strong>Super Bowl XLVIII, MetLife Stadium, East Rutherford, NJ: Seattle Seahawks beat Denver Broncos, 42-8; MVP: Malcolm Smith, Seattle, LB</p>
+            </section>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <section id="conversation">
+            <h3 class="grand title">Conversation Starters</h3>
+            <ul>
+              <li><i class="bullet fas fa-chevron-right"></i> Will technology save the human race or destroy it?</li>
+              <li><i class="bullet fas fa-chevron-right"></i> What sci-fi movie or book would you like the future to be like?</li>
+              <li><i class="bullet fas fa-chevron-right"></i> Who would be the worst person to be stuck in an elevator with? How about the best person to be stuck in an elevator with?</li>
+              <li><i class="bullet fas fa-chevron-right"></i> What is the most useful app on your phone?</li>
+              <li><i class="bullet fas fa-chevron-right"></i> What's the best gift you have ever given?</li>
+            </ul>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <h3 class="grand title" style="text-align: center">Quotes</h3>
+          <section id="quotes">
+            <section class="quote-wrapper">
+              <h5 class="grand">Quote of the Day</h5>
+              <p>Kites rise highest against the wind - not with it.<span class="poet"> ~ Winston Churchill</span></p>
+            </section>
+            <section class="quote-wrapper">
+              <h5 class="grand">Love Quote of the Day</h5>
+              <p>I wonder what fool it was that first invented kissing.<span class="poet"> ~ Jonathan Swift</span></p>
+            </section>
+            <section class="quote-wrapper">
+              <h5 class="grand">Art Quote of the Day</h5>
+              <p>I cry out for order and find it only in art.<span class="poet"> ~ Helen Hayes</span></p>
+            </section>
+            <section class="quote-wrapper">
+              <h5 class="grand">Nature Quote of the Day</h5>
+              <p>Nature soaks every evil with either fear or shame.<span class="poet"> ~ Tertullian</span></p>
+            </section>
+            <section class="quote-wrapper">
+              <h5 class="grand">Funny Quote of the Day</h5>
+              <p>I don't believe it. Prove it to me and I still won't believe it.<span class="poet"> ~ Douglas Adams</span></p>
+            </section>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <section id="horoscope">
+            <h3 class="grand title">Horoscopes</h3>
+            <section class="horoscope">
+              <h4 class="grand">Aires</h4>
+              <p> Today, it's payback for you, which can be a good thing or a bad thing, depending on how many brownie points you've accrued in your karma account. If you worry that you're due for some bad news, try to keep busy! Staying distracted
+                is the best way to soften whatever blows might be coming your way. But if you're confident that you've built up a lot of goodwill, then this is a great day to relax. Open up your schedule and enjoy having unstructured time to soak up
+                all the good vibes.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Taurus</h4>
+              <p> Try to avoid any financial dealings with your friends right now. No matter how exciting an opportunity may be, it's just not worth the risk when the health and happiness of a friendship could be at stake. There is a lot of
+                uncertainty about transactions and investments right now, and you all would be much better off if you delayed moving forward with things. Wait for another time, when things are clearer. Money is a very personal issue. Don't make it a
+                public one.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Gemini</h4>
+              <p> If someone is critical about your work or attitude today, don't waste any time worrying about it. Unless they're saying things that will negatively affect your reputation and how others see you, you don't need to give a darn about
+                what they think. But if you do start seeing that people are listening to this person and believing what they say, you must address the attacker immediately. People will think that if you don't fight back then what they're hearing must
+                be true.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Cancer</h4>
+              <p> You can't search for a ready-made new philosophy on life. You have to create one by exposing yourself to new ideas and theories. If you've been wrestling with a certain issue and just can't shake the bad way it's making you feel,
+                seek some insight from friends. Ask them how they would handle things. Their answers will help you shape your own attitudes. What's right for them might not be right for you, but at least you're seeing different points of view, and
+                that will be helpful.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Leo</h4>
+              <p> There are all sorts of creative ways to get around the conflicts in your life, but ignoring them sure isn't one of them! Procrastination will never, ever help you get things done. It will only keep you passive. Step up and take
+                charge of your own life by having that conversation you've been dreading. Set some time aside later today and try to get face-to-face with the person who's causing you stress. If you can't do that, talk to them on the phone in a quiet
+                location.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Virgo</h4>
+              <p> There is a huge risk of people overreacting today, so be careful about what you say to others, especially people you don't know very well. Even the slightest hint of something controversial could trigger someone's temper and get
+                them all worked up and in your face. Who needs that? Plus, all of the excess energy they create will distract you from the things that really need your attention. Just carry on as you normally would. And keep an eye out for hotheads!
+              </p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Libra</h4>
+              <p> Staying in sync with other people is going to be fun and easy for you, today, which is obviously a very good thing. Each of the power players you are working with is on the same page as you, so you won't have to waste any energy
+                being more flexible than you're willing to be. Everything you want to do, they will want to do, and vice versa. The tone of the day will be harmonious, and no one is going to be annoyed or out of sorts when you suggest your nuttiest
+                idea.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Scorpio</h4>
+              <p> More than ever before, new music and art will spark your creativity today, offering you some new ideas and giving your brain a few new ways of thinking. Try to expose yourself to different music genres. When was the last time you
+                listened to opera, Broadway tunes, or a little country? Click over to a music website and see what artists are similar to your favorites. If you have some money burning a hole in your pocket, invest in expanding your music collection.
+              </p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Sagittarius</h4>
+              <p> Childlike behavior is only cute when it's taking place among children. If you see grownups acting like they're ten today, do yourself a favor and steer clear of them! And if you can't steer clear of them, at least refuse to join in
+                on their silly games. You've got grownup business to attend to, and sitting around gossiping or cutting people down behind their back is not going to help you. People may think you're being a party pooper by not joining in, but do you
+                really care?</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Capricorn</h4>
+              <p> You have a natural patience and compassion that makes you a wonderful leader, so why are you letting your fears keep you from stepping into that role? It's time for you to swallow your doubts and raise your hand when someone asks
+                who wants to be in charge today. You know you can do this, and you know you can do this well! You're only too glad to help, and there is no reason not to show it. Be enthusiastic and all of your doubts will just fade away.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Aquarius</h4>
+              <p> You might get sidetracked from one of your pressing projects by an unexpected relationship issue today, but it probably won't be a problem. Don't worry about the distraction. Deal with it. You can take care of it without alerting
+                anyone at work or school to the fact that anything is amiss. You'll be back and focused on the task at hand without anyone being the wiser. In fact, you can expect a few compliments by the end of the day about what a great job you're
+                doing!</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Pisces</h4>
+              <p> Your friends all come in different shapes, sizes, and styles, so don't treat them all the same way. It's not that you should play favorites; it's just that you should be mindful of the fact that some friends require more attention
+                from you than others. Just because friend A doesn't need to hear from you for months, doesn't mean that friend B is going to be cool with that. Make sure you're giving everyone what they need. If you're not, it's not too late to start
+                trying.</p>
+            </section>
+          </section>
+        </td>
+        <td>
+          <section id="chinese">
+            <h3 class="grand title">Chinese Horoscopes</h3>
+            <section class="horoscope">
+              <h4 class="grand">Ox</h4>
+              <p> If you want to let your guard down with someone, you're going to have to find a way to trust this person. There's no way around it. You can't get close without risking the possibility of hurt. Use your good judgment. Has this person
+                given you any reason to doubt them? If not, keep moving forward.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Sheep</h4>
+              <p> You might have old-fashioned ideas about romance, but perhaps it's time to think outside the box. Make the first move, and don't be afraid to be bold about it. As long as your intentions are pure and you convey a genuine sense of
+                self, this person ought to be thoroughly intrigued.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Rat</h4>
+              <p> Intimacy is more important than trying to please a bunch of different people today. Get to know that friend, co-worker, or new person you're dating a little bit better, minus all the distractions of other people. A solid, one-on-one
+                exchange could bring you exactly the kind of connection you're yearning for right now.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Snake</h4>
+              <p> You love to stay inside your comfort zone, but maybe it's time to branch out just a bit. How about calling that person you met at the book club a while back? Sending an e-mail to the co-worker you never hang with? Even just one
+                adventurous outing could turn your whole weekend around.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Dragon</h4>
+              <p> Whatever you need today, consider flipping through that contact list on your phone. There's bound to be someone who can help you. Before you go hire some college kids to help you move or call the plumber to fix your shower, cash in
+                those favors that people owe you. There's bound to be a few up for grabs.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Tiger</h4>
+              <p> If you wait for others to give you what you need, you might be waiting forever. Stop expecting your partner, friends, or family to fulfill your desires and take care of them yourself! Book that massage. Plan that vacation. Buy that
+                piece of jewelry. You've earned a little self-indulgence, haven't you?</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Rabbit</h4>
+              <p> Are you bringing the office home with you? Maybe it's time to stop returning work calls in the middle of dinner or answering e-mails at bedtime. It's fine to be proactive, even to show you're willing to go the extra mile, but if you
+                take it too far, you're going to set the precedent that you're always available. Not a good place to be when that needy client wants you and you're not around.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Horse</h4>
+              <p> Some much-needed solitude could be calling today. Ditch your plans and head to your favorite coffee shop, park, whatever. Bring along a book, some music, or just sit in silence and let your mind empty. It should recharge your
+                batteries and help you ease into work more mindfully.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Monkey</h4>
+              <p> That inner critic needs to be silenced. Sure, we all have things we could improve, but mentally taking note of your flaws all day long is detrimental to your well-being and self-confidence. Come up with some affirmations you can use
+                to replace negative thoughts when they come up.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Rooster</h4>
+              <p> Sometimes accidents or setbacks happen for a reason. They're supposed to teach us something valuable. Don't throw away the lesson if you've encountered something like this lately. What is the message here? Consider that delays or
+                problems might actually be gifts in disguise. What can you learn from them?</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Dog</h4>
+              <p> There are others out there who "get it," but maybe you haven't found them yet. Start looking for them today. Whether you're dying to date someone who shares your political views or want to connect with friends who love art as much
+                as you do, be proactive about your search. Join online communities, get out of the house, and be the first to reach out.</p>
+            </section>
+            <section class="horoscope">
+              <h4 class="grand">Pig</h4>
+              <p> Don't dim your own light to make someone else feel secure. You have every right to shine and be your wonderful, talented self. If someone doesn't like it, too bad. Remember that saying, "I'm OK, you're OK"? Live by it. Know your
+                worth, but don't think you're better than others. This is called self-love.</p>
+            </section>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <h3 class="grand title" style="text-align: center">Word Puzzles</h3>
+          <section id="word-puzzles">
+            <section class="word-puzzle-wrapper">
+              <section id="hink-pinks">
+                <h4 class="grand">Hink Pinks</h4>
+                <ol>
+                  <li>Pasta pastry</li>
+                  <li>Grab a quick look at</li>
+                  <li>Redish nylons</li>
+                  <li>Scalding cauldron</li>
+                  <li>Cow chuckle</li>
+                  <li>Metal Needle</li>
+                  <li>A birds foot defect</li>
+                  <li>A blue-green moray</li>
+                  <li>Cool shoe spike</li>
+                  <li>Hypnotic ballet</li>
+                </ol>
+              </section>
+            </section>
+            <section class="word-puzzle-wrapper">
+              <section id="commonyms">
+                <h4 class="grand">Commonyms</h4>
+                <ol>
+                  <li>Green - Moola - Dough</li>
+                  <li>Playing - Time - Greeting</li>
+                  <li>Punch - Hair - A Volleyball</li>
+                  <li>High - Balance - Laser</li>
+                  <li>Human - Rat - Relay</li>
+                  <li>Cat - Dog - Gold</li>
+                  <li>Toad - Foot - Bar</li>
+                  <li>French - Eskimo - Hershey</li>
+                  <li>Area - Fire - Zip</li>
+                  <li>Gray - Red - Timber</li>
+                </ol>
+              </section>
+            </section>
+            <section class="word-puzzle-wrapper">
+              <section id="mad-gabs">
+                <h4 class="grand">Mad Gabs</h4>
+                <ol>
+                  <li>Cage Hunk Hook King</li>
+                  <li>Call Fibber Rake</li>
+                  <li>Canoe Key Pace He Grit</li>
+                  <li>Cause Mope Hauly Ten</li>
+                  <li>Calm Hand Drench Hea</li>
+                </ol>
+              </section>
+            </section>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <section id="bamboozables">
+            <h4 class="grand">Bamboozables</h4><img id="bamboozable-img" class="no-filter" src="http://www.thinkablepuzzles.com/bamboozables/bamboozable11.jpg" />
+          </section>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+<h3 class="grand title" id="answer-page">Answers</h3>
+<section class="hider">Show Answers!</section>
+<section class="hidden">
+  <section id="answers">
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Hink Pinks</h4>
+      <ol class="answer-style">
+        <li>Noodle Strudel</li>
+        <li>Sneak Peek</li>
+        <li>Rose Hose</li>
+        <li>Hot Pot</li>
+        <li>Calf Laugh</li>
+        <li>Tin Pin</li>
+        <li>Claw Flaw</li>
+        <li>Teal Eel</li>
+        <li>Freeze Cheese</li>
+        <li>Trance Dance</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Commonymns</h4>
+      <ol class="answer-style">
+        <li>slang for money</li>
+        <li>types of cards</li>
+        <li>they can be spiked</li>
+        <li>beams</li>
+        <li>races</li>
+        <li>fish</li>
+        <li>stools</li>
+        <li>kisses</li>
+        <li>codes</li>
+        <li>wolve</li>
+        <ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Mad Gabs</h4>
+      <ol class="answer-style">
+        <li>Cajun Cooking</li>
+        <li>Coffee Break</li>
+        <li>Can you keep a secret?</li>
+        <li>Cosmopolitan</li>
+        <li>Commander in Chie</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Bamboozables</h4>
+      <ol class="answer-style">
+        <li>Tulips</li>
+        <li>Back in five minutes</li>
+        <li>One Life to Live</li>
+        <li>First Thing in the Morning</li>
+        <li>Go Through the Motion</li>
+        <li>The Coast is Clear</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Riddle</h4>
+      <p>His Horse was called Sunday!</p>
+    </section>
+  </section>
+</section>
+<footer>
+  <p>Information Scraped from: <a href="https://www.riddles.com/riddle-of-the-day">riddles.com</a>, <a href="https://www.onthisday.com/">onthisday.com</a>, <a href="https://www.brainyquote.com/quote_of_the_day">brainyquote.com</a>, <a
+      href="https://nationaltoday.com/what-is-today/">nationaltoday.com</a>, <a href="https://weather.com/weather/hourbyhour/l/8cd1a4fdf1a3fddbdd025b0f20f49602aa7fc5b410cf85c2866e485bd1e375e4">weather.com</a>, <a
+      href="https://www.astrology.com/">astrology.com<a>, <a href="http://www.thinkablepuzzles.com">thinkablepuzzles.com</a></p>
+</footer>
+<script type="text/javascript" src="{{ url_for('static', filename='javascript/darktoggle.js') }}"></script>
+</body>
+
+</html>

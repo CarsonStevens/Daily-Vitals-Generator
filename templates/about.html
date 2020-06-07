@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include 'head.html' %}
+{% include 'nav.html' %}
+    <header>
+      <h1 class="grand title">Daily Vitals Generator</h1>
+      <h3 class="grand title">Start Building a Community</h3>
+    </header>
+
+    <main>
+      <article id="about-article">
+        <p class="instructions">
+          This generator scapes information from websites and formats it so that each day, new content is available. Daily Vitals are a great way for a community to engage in conversation and get to know each other. The games can also create a little friendly competition. The webpages are formatted to be printed out.
+        </p>
+        <p class="instructions">
+          Feel free to try out some of the other site features like the customizable generator or submit some of your own content to be featured.
+        </p>
+        <p class="instructions">
+          Currently the weather is set to only do Denver's at the specified times, but should easily be expandable to other locations and times. Other suggestions for improvements or features are greatly appreciated. Just go to the the "Submit Content" page and click on the suggestion option.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>Information Scraped from: <a href="https://www.riddles.com/riddle-of-the-day">riddles.com</a>, <a href="https://www.onthisday.com/">onthisday.com</a>, <a href="https://www.brainyquote.com/quote_of_the_day">brainyquote.com</a>, <a
+        href="https://nationaltoday.com/what-is-today/">nationaltoday.com</a>, <a href="https://weather.com/weather/hourbyhour/l/8cd1a4fdf1a3fddbdd025b0f20f49602aa7fc5b410cf85c2866e485bd1e375e4">weather.com</a>, <a
+        href="https://www.astrology.com/">astrology.com<a>, <a href="http://www.thinkablepuzzles.com">thinkablepuzzles.com</a></p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/darktoggle.js') }}"></script>
+  </body>
+
+</html>

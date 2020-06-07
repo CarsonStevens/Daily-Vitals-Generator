@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" contents="Auto-generated daily vitals for ERC" />
+  <meta name="keywords" contents="ERC Daily Vitals" />
+  <meta name="author" contents="Carson Stevens" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERC Daily Vitals</title>
+  <link href="https://fonts.googleapis.com/css?family=Aladin|Bilbo+Swash+Caps|Grand+Hotel|Leckerli+One|Patrick+Hand+SC|Raleway:400,600&display=swap" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="category">
+        <a>Previous Vitals</a>
+        <ul class="dropdown">
+          <li class="dropdown-subcategory">
+            <a>January 2020</a>
+            <ul class="dropdown month">
+              <li class="subcategory-item"><a class="day">1</a></li>
+              <li class="subcategory-item"><a>2</a></li>
+              <li class="subcategory-item"><a>1</a></li>
+              <li class="subcategory-item"><a>2</a></li>
+              <li class="subcategory-item"><a>1</a></li>
+              <li class="subcategory-item"><a>2</a></li>
+              <li class="subcategory-item"><a>1</a></li>
+              <li class="subcategory-item"><a>20</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-subcategory">
+            <a>February 2020</a>
+            <ul class="dropdown month">
+              <li class="subcategory-item"><a>1</a></li>
+              <li class="subcategory-item"><a>2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="category"><a>Generate New Vital</a></li>
+    </ul>
+  </nav>
+  <header>
+    <table id="heading">
+      <tr>
+        <td>
+          <h1 class="grand"><img src="{{ url_for('static', filename='images/ERC-Home-Logo.png') }}" class="logo" /> Daily Vitals</h1>
+          <h2 class="grand">Thursday</br>January 30<sup class="th">th</sup>, 2020</h2>
+        </td>
+        <td>
+          <section class="weather">
+            <table class="forecast">
+              <caption>Weather Forecast</caption>
+              <tbody>
+                <tr>
+                  <th>Time</th>
+                  <th>Temperature</th>
+                  <th>Wind</th>
+                </tr>
+                <tr>
+                  <td>8:00 <em class="meridiem">am</em></td>
+                  <td>24&deg</td>
+                  <td>SSW 6 <em class="speed">mph</em></td>
+                </tr>
+                <tr>
+                  <td>11:00 <em class="meridiem">am</em></td>
+                  <td>40&deg</td>
+                  <td>NNW 4 <em class="speed">mph</em></td>
+                </tr>
+                <tr>
+                  <td>1:00 <em class="meridiem">pm</em></td>
+                  <td>44&deg</td>
+                  <td>N 8 <em class="speed">mph</em></td>
+                </tr>
+                <tr>
+                  <td>6:00 <em class="meridiem">pm</em></td>
+                  <td>36&deg</td>
+                  <td>N 10 <em class="speed">mph</em></td>
+                </tr>
+              <tbody>
+            </table>
+          </section>
+        </td>
+      </tr>
+    </table>
+  </header>
+  <main>
+    <table class="column-format">
+      <tbody>
+        <tr>
+          <td colspan="3">
+            <section id="daily-info">
+              <section class="daily-info-wrapper">
+                <section id="national-days">
+                  <h4 class="grand">National Days</h4>
+                  <ol>
+                    <li>National Croissant Day </li>
+                  </ol>
+                </section>
+              </section>
+              <section class="daily-info-wrapper">
+                <section id="birthdays">
+                  <h4 class="grand">Famous Birthdays</h4>
+                  <ol>
+                    <li>Christian Bale</li>
+                    <li>Francis Schaeffer</li>
+                    <li>F. H. Bradley</li>
+                    <li>Franklin D. Roosevelt</li>
+                    <li>Walter Savage Landor</li>
+                  </ol>
+                </section>
+              </section>
+              <section class="daily-info-wrapper">
+                <section id="riddle">
+                  <h4 class="grand">Riddle</h4>
+                  <p>What belongs to you, but other people use it more than you?</p>
+                </section>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <section id="day-in-history">
+              <h3 class="grand">This Day in History</h3>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1661 ~ </strong>Oliver Cromwell, Lord Protector of the Commonwealth of England is ritually executed after having been dead for two years</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1815 ~ </strong>Burned US Library of Congress re-established with Thomas Jefferson's 6,500 volumes</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1853 ~ </strong>Emperor and French President Napoleon III marries Eugenie de Montijo, Countess of Teba</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1902 ~ </strong>Britain and Japan sign a treaty after months of negotiating which commits each country to supporting an independent China and Korea, although it acknowledges Japan's
+                  'special interest' in Korea</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1929 ~ </strong>Mitford sister Diana Mitford (18) marries Irish peer Bryan Walter Guinness (23) in the British society wedding of the year</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1931 ~ </strong>"City Lights", American silent romantic comedy film directed by Charlie Chaplin, starring himself and Virginia Cherrill, premieres at Los Angeles Theater</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1933 ~ </strong>President Paul von Hindenburg appoints Adolf Hitler as Reich Chancellor of Germany who forms a government with Franz von Papen</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1934 ~ </strong>Actor and comedian Lou Costello marries burlesque dancer Anne Battler</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1939 ~ </strong>Adolf Hitler threatens Jews during his speech to the German Reichstag (Parliament)</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1948 ~ </strong>Mahatma Gandhi assassinated by Hindu extremist Nathuram Godse</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1961 ~ </strong>"I Fall to Pieces" single released by Patsy Cline (Billboard Song of the Year 1961)</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1965 ~ </strong>State Funeral of Winston Churchill at St Paul's Cathedral in London. Then world's largest ever state funeral.</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1972 ~ </strong>Bloody Sunday: 27 unarmed civilians are shot (14 are killed) by the British Army during a civil rights march in Derry, Northern Ireland; this is the highest death toll
+                  from a single shooting incident during 'the Troubles'</p>
+              </section>
+              <section class="history-wrapper">
+                <p class="history-context"><strong class="year">1994 ~ </strong>Kapil Dev takes 2/41 as India beats Sri Lanka by an innings and 95 runs in 2nd Cricket Test in Bengaluru; equals Sir Richard Hadlee's world record of 431 Test wickets</p>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <section id="conversation">
+              <h3 class="grand">Conversation Starters</h3>
+              <ul id="conversation-list">
+                <li>Do you like going to concerts? Why or why not? What was the last concert you went to?</li>
+                <li>What is the biggest holiday for your family?</li>
+                <li>If you could make a holiday what would it be like? What traditions would it have? </li>
+                <li>What's the most beautiful place you have been?</li>
+                <li>What’s your earliest childhood memory?</li>
+              </ul>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h3 class="grand" style="text-align: center">Quotes</h3>
+            <section id="quotes">
+              <section class="quote-wrapper">
+                <h5 class="grand">Quote of the Day</h5>
+                <p>A man who gives his children habits of industry provides for them better than by giving them fortune.<span class="poet"> ~ Richard Whately</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Love Quote of the Day</h5>
+                <p>Accustom yourself continually to make many acts of love, for they enkindle and melt the soul.<span class="poet"> ~ Saint Teresa of Avila</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Art Quote of the Day</h5>
+                <p>It is the addition of strangeness to beauty that constitutes the romantic character in art.<span class="poet"> ~ Walter Hagen</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Nature Quote of the Day</h5>
+                <p>What makes the desert beautiful is that somewhere it hides a well.<span class="poet"> ~ Antoine de Saint-Exupery</span></p>
+              </section>
+              <section class="quote-wrapper">
+                <h5 class="grand">Funny Quote of the Day</h5>
+                <p>My life needs editing.<span class="poet"> ~ Mort Sahl</span></p>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <section id="horoscope">
+              <h3 class="grand">Horoscopes</h3>
+              <section class="horoscope">
+                <h4 class="grand">Aires</h4>
+                <p> There is nothing standing in your way today! The road is wide open and slanted slightly downhill just enough to let you coast along nicely. Let your ambition take a back seat for today, while you just ride out the day and see what
+                  it brings you. Go through this day as if you're pedaling leisurely through a blooming garden. Take your time and you'll find a few breathtakingly beautiful surprises, some comforting sights, and some very intriguing new specimens.
+                </p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Taurus</h4>
+                <p> Believe it or not, everyone has a wellspring of creativity inside of them, especially you! Creativity is your spirit's way of communicating and revealing itself to the outside world, and it's a wonderful way to release powerful,
+                  positive energy into the universe. Today, utilize your creativity to make a statement about who you are. Act in an unusual way that gets you noticed and offers you an opportunity to let others to learn something about you. Wrap your
+                  message in an unexpected package.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Gemini</h4>
+                <p> If you want to get some new energy in your life right now, you need to mix it up with some new people. Makes sense, right? Strike up a conversation with a stranger in line, compliment a rookie co-worker on a new outfit, or ask
+                  someone to lunch who you've never really talked to before. Expanding your experiences starts with expanding the people you talk to. You'll be surprised by how much of a difference one little conversation can have on your outlook.
+                </p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Cancer</h4>
+                <p> You're a very generous person, to a fault, sometimes. There are some new people in your life right now who could be angling to take advantage of the fact that you tend to think of the needs of others before you consider your own
+                  needs. Today, you should protect yourself. Switch around your priority list to focus more on giving yourself what you need (and keeping what you have). Conservation is a big long word for hanging on to what you've worked so hard
+                  for.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Leo</h4>
+                <p> Are you intimidated by anyone right now? If so, you need to spend time with them today. Don't veer into stalker territory, but you should try your best to spend as much time as you can with someone who makes you feel
+                  self-conscious or nervous. The more you can see them for who they really are, the less uncomfortable they'll make you feel in the future. If no one intimidates you, then keep an eye out for a shy person who's doing their best to get
+                  to know you. Be friendly!</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Virgo</h4>
+                <p> Today, you could see something odd, but you should understand that it's a clear sign that you're on the right track. Results are piling up left and right, and you need to feel proud of yourself -- even if no one else is patting
+                  you on the back. One or two relationships are moving to a deeper level. You might not feel up for the challenge, but you are. Don't fret if people are clamming up or hiding behind their walls. Your patience is all they need.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Libra</h4>
+                <p> Conversations with a few intellectual giants will be entertaining and enriching today, especially if you have confidence in what you bring to the mix. Keep in mind that you don't have to be an expert on everything to be included.
+                  In fact, a healthy curiosity will make you a very helpful conversational partner. Check out key concepts and get familiar with them so you'll know what to ask when. Your brain is getting hungry, so feed it before it growls!</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Scorpio</h4>
+                <p> Your ideas are definitely the best ones being offered up today, so how come no one is listening to you? This is no time to throw a hissy fit out of frustration, because that will do little to help people take you seriously.
+                  Instead, resign yourself to the fact that you can lead a horse to water but you can't make it drink. In "groupthink" situations, sometimes the answer is not the right answer. It's merely the one that everyone agrees on.<br /></p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Sagittarius</h4>
+                <p> Cold logic is for math problems and science fair projects, not for introducing new people into your life! The next time you're thrust into a large social group with little warning, don't put up your guard. Stop trying to size up
+                  people before you open up. Walk into the room with your mind and heart wide open. It's time to let your warmth and compassion do the talking. They create and inspire much more interesting conversations than critical thinking ever
+                  could.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Capricorn</h4>
+                <p> This may sound counterintuitive, but the stars say you should seek out conflict today. You're not one for confrontation, but it's a necessary evil in life and something you would be better off becoming more comfortable with. The
+                  future holds some battles for you, and getting practice with the easy skirmishes will help you down the road. You'll always be able to see the problems at hand, but you should develop some more skills for doing something about them.
+                </p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Aquarius</h4>
+                <p> No one is standing in your way anymore. It's just you in charge of your life, and it's time you realized that you have more power now than you've ever had before. This could be a frightening realization for you, but if you're
+                  afraid of anything, you should fear inactivity the most. Push forward in a major way in at least one area of your life today. Make a change that you never felt you could make before, and you'll get a taste of what's possible.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Pisces</h4>
+                <p> Sometimes, an interruption can be a very good thing. It forces you to pause and take a step off the road you've been traveling on. Yes, it certainly can be annoying to have to stop what you're doing, but you can easily turn a
+                  break in the action into a very positive experience. Today, use any downtime you have to double-check the work you've done so far, and don't be afraid to admit that it might be time for you to change course or direction.</p>
+              </section>
+            </section>
+          </td>
+          <td>
+            <section id="chinese">
+              <h3 class="grand">Chinese Horoscopes</h3>
+              <section class="horoscope">
+                <h4 class="grand">Ox</h4>
+                <p> You might be out and about a little more than usual today, but try to wind down the evening at home with your closest friends or family members. You've probably been putting off some planning, so sit down with your posse and come
+                  up with some ideas, whether it's for a dinner party or an overhaul of your guest bathroom.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Sheep</h4>
+                <p> Just when you think the world has thrown you to the wolves, you catch a break. Isn't this always how it goes? If you're feeling discouraged about something, just wait it out. The solution or answer will come when you need it.
+                  Until then, just have faith life will take care of you.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Rat</h4>
+                <p> You're blessed with the gift of gab, but know when to speak and when to zip it. You opinions aren't always welcome, especially when you're force-feeding them down someone's throat. Don't expect to gain a good audience that way.
+                  Work on being a better listener.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Snake</h4>
+                <p> Bored? If things are humming along at a monotonous pace, maybe it's time to stop pointing the finger at life and just do something about it. If you're not content where you are, that's on you. Add some new things to your routine.
+                  Shake up your schedule. Things are only set in stone if you let them dry out. Keep stirring that cement.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Dragon</h4>
+                <p> It's time to have a crystal-clear vision of what you want. If the picture in your head is fuzzy, how do you expect to translate that into reality? Sit down and write out your desires. Heck, draw a picture if you're artistic or cut
+                  out pictures from magazines. Get clear about what you want and exactly what it looks like.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Tiger</h4>
+                <p> Could your love life use some extra oomph? It's fine to be best friends and roommates, but make sure you keep the romance alive. Schedule some weekend getaways in the coming months. Just having something to look forward to will
+                  take the heat up a notch.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Rabbit</h4>
+                <p> It's time to find the fun in the ordinary. Mundane activities are going to remain that way unless you can find meaning and pleasure in them. Slow down and actually enjoy that cup of coffee. Take a long lunch to break up the
+                  workday while chatting with a friend. Slow down and enjoy life instead of just letting it happen to you.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Horse</h4>
+                <p> Independence in relationships can be a tricky thing. You want to be part of a couple, but you also want your freedom. Have you been struggling with this lately? If it makes sense, maybe you should set up a schedule for yourself.
+                  Two days a week for you, five with your partner, or something like that. Knowing you have the time you need for yourself could help with the anxiety about being smothered.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Monkey</h4>
+                <p> A new (and big) client or project could fall into your lap at work today. The good news is that it's probably exactly what you need in order to bring in some extra income. The bad news is that you might have to let another client
+                  go or cut some things out of your schedule. Keep your eye on the prize. This one is worth the added effort.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Rooster</h4>
+                <p> Is your social life suffering because of work? While it can be hard to miss all those parties, lunch dates, and happy hours, know that your time isn't being wasted. The work you're putting in now is going to bring amazing
+                  successes in the short-term future. Just hold on until then. You'll really have a reason to celebrate!</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Dog</h4>
+                <p> Creating relationships is sometimes more important than the bottom line. Remember this at work today or if you're trying desperately to sell someone on something. Let a natural, friendly partnership develop. Over time, the trust
+                  you have with people is what will lead to the desired result you want.</p>
+              </section>
+              <section class="horoscope">
+                <h4 class="grand">Pig</h4>
+                <p> Say yes to life. Things are flowing abundantly and freely for you now, so open up and receive it all! Also, make sure to say thank you when you get a stroke of good luck. Whether you believe in a deity, the universe, or just good
+                  fortune, acknowledge that the world has your best interests at heart. Things are working for you, not against you.</p>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <section id="word-puzzles">
+              <h4 class="grand" style="text-align: center">Word Puzzles</h4>
+              <section class="word-puzzle-wrapper">
+                <section id="hink-pinks">
+                  <h4 class="grand">Hink Pinks</h4>
+                  <ol>
+                    <li>Angry employer</li>
+                    <li>Tossed batter</li>
+                    <li>Nightlike playground</li>
+                    <li>Insect carpet</li>
+                    <li>Thin border</li>
+                    <li>"Sniffer" iced up</li>
+                    <li>Munchie bag</li>
+                    <li>Living plunge</li>
+                    <li>Insect carriage</li>
+                    <li>Understood color</li>
+                  </ol>
+                </section>
+              </section>
+              <section class="word-puzzle-wrapper">
+                <section id="commonyms">
+                  <h4 class="grand">Commonyms</h4>
+                  <ol>
+                    <li>The Brain - The Lung - The Ear</li>
+                    <li>Spider - Fiddler - Hermit</li>
+                    <li>Back - Butterfly - Side</li>
+                    <li>A Car - A Tree - An Elephant</li>
+                    <li>A Bear - A Hammer - A Lobster</li>
+                    <li>Finish - Fishing - Dotted</li>
+                    <li>Metal - Radar - Lie</li>
+                    <li>Stop - Spot - Strobe</li>
+                    <li>Trap - French - Glass</li>
+                    <li>State - Sales - Income</li>
+                  </ol>
+                </section>
+              </section>
+              <section class="word-puzzle-wrapper">
+                <section id="mad-gabs">
+                  <h4 class="grand">Mad Gabs</h4>
+                  <ol>
+                    <li>Dawn Bees Hose Hilly</li>
+                    <li>Dawn Bill Eight</li>
+                    <li>Dawn Buried Hick Yule Us</li>
+                    <li>Dawn Jury Member</li>
+                    <li>Dawn Tall Quit Chore Mile Fu</li>
+                  </ol>
+                </section>
+              </section>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <section id="bamboozables">
+              <h4 class="grand">Bamboozables</h4><img id="bamboozable-img" src="http://www.thinkablepuzzles.com/bamboozables/bamboozable32.jpg" />
+            </section>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <h3 class="grand" id="answer-page">Answers</h3>
+  <section id="answers">
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Hink Pinks</h4>
+      <ol class="answer-style">
+        <li>Cross Boss</li>
+        <li>Throw Dough</li>
+        <li>Dark Park</li>
+        <li>Bug Rug</li>
+        <li>Fine Line</li>
+        <li>Nose Froze</li>
+        <li>Snack Pack</li>
+        <li>Live Dive</li>
+        <li>Roach Coach</li>
+        <li>Knew Hue</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Commonymns</h4>
+      <ol class="answer-style">
+        <li>They have lobes</li>
+        <li>Crabs</li>
+        <li>Swimming strokes</li>
+        <li>They have trunks</li>
+        <li>They have claws</li>
+        <li>Lines</li>
+        <li>Detectors</li>
+        <li>Lights</li>
+        <li>Doors</li>
+        <li>Taxe</li>
+        <ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Mad Gabs</h4>
+      <ol class="answer-style">
+        <li>Don't Be So Silly</li>
+        <li>Don't Be Late</li>
+        <li>Don't Be Ridiculous</li>
+        <li>Don't You Remember</li>
+        <li>Don't Talk with Your Mouth Ful</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Bamboozables</h4>
+      <ol class="answer-style">
+        <li>Bags Under the Eyes</li>
+        <li>Firing Line</li>
+        <li>Snake in the Grass</li>
+        <li>One Step Ahead</li>
+        <li>Within Reason</li>
+        <li>More to it than Meets the Eye</li>
+      </ol>
+    </section>
+    <section class="word-puzzle-wrapper">
+      <h4 class="grand">Riddle</h4>
+      <p>Your name.</p>
+    </section>
+  </section>
+
+  <script>
+    $(document).ready(function(){
+      $('.dropdown-submenu a.test').on("click", function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+  </script>
+</body>
+
+</html>

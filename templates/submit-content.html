@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include 'head.html' %}
+{% include 'nav.html' %}
+    <header>
+      <h1 class="grand title">Submit Your Own Content!</h1>
+      <h3 class="grand title">Select the type below</h3>
+    </header>
+
+    <main>
+      <section id="submission-form">
+        <form id="submission-form-fill" action="/submit_content/submitted" method="post">
+          <h4 class="grand">Select Type</h4>
+          <span class="submit-label">Hink Pink</span>
+          <input type="radio" name="submit_type" value="hinkpink" onchange="submission_change()">
+          <span class="submit-label">Commonym</span>
+          <input type="radio" name="submit_type" value="commonym" onchange="submission_change()">
+          <span class="submit-label">Mad Gab</span>
+          <input type="radio" name="submit_type" value="madgab" onchange="submission_change()">
+          <span class="submit-label">Conversation Starter</span>
+          <input type="radio" name="submit_type" value="conversation" onchange="submission_change()">
+          <span class="submit-label">Riddle</span>
+          <input type="radio" name="submit_type" value="riddle" onchange="submission_change()">
+          <span class="submit-label">Suggestion</span>
+          <input type="radio" name="submit_type" value="suggestion" onchange="submission_change()">
+          <section id="hinkpink-submission" class="form">
+            <input class="hinkpink-sub-option" type="text" name="hinkpink1" placeholder="Word #1" />
+            <input class="hinkpink-sub-option" type="text" name="hinkpink2" placeholder="Word #2" />
+            <input class="hinkpink-sub-option" type="text" name="hinkpink3" placeholder="Rhyme #1" />
+            <input class="hinkpink-sub-option" type="text" name="hinkpink4" placeholder="Rhyme #2" />
+          </section>
+          <section id="commonym-submission" class="form">
+            <input class="commonym-sub-option" type="text" name="commonym1" placeholder="Word #1" />
+            <input class="commonym-sub-option" type="text" name="commonym2" placeholder="Word #2" />
+            <input class="commonym-sub-option" type="text" name="commonym3" placeholder="Word #3" />
+            <input class="commonym-sub-option" type="text" name="commonym_answer" placeholder="Answer" />
+          </section>
+          <section id="madgab-submission" class="form">
+            <input class="madgab-sub-option" type="text" name="madgab1" placeholder="Phrase" />
+            <input class="madgab-sub-option" type="text" name="madgab_answer" placeholder="Answer" />
+          </section>
+          <section id="conversation-submission" class="form">
+            <textarea cols="60", rows="7" class="conversation-sub-option" type="text" name="conversation_answer" placeholder="Input Conversation Stater" />
+          </section>
+          <section id="riddle-submission" class="form">
+            <input class="riddle-sub-option" type="text" name="riddle1" placeholder="Riddle" />
+            <input class="riddle-sub-option" type="text" name="riddle_answer" placeholder="Answer" />
+          </section>
+          <section id="suggestion-submission" class="form">
+            <h3 class="instructions">Offer suggessions for ideas to improve the site or new features you want.</h3>
+            <textarea cols="60", rows="7" class="conversation-sub-option" type="text" name="suggestion_answer" placeholder="Input Suggestion" />
+          </section>
+          <section id="submit-content-btn">
+            <h3 class="grand title">Submit</h3>
+          </section>
+        </form>
+      </section>
+      <section id="submitted-response">
+        <h1 class="grand title">Submitted!</h1>
+      </section>
+    </main>
+
+    <footer>
+      <p>Information Scraped from: <a href="https://www.riddles.com/riddle-of-the-day">riddles.com</a>, <a href="https://www.onthisday.com/">onthisday.com</a>, <a href="https://www.brainyquote.com/quote_of_the_day">brainyquote.com</a>, <a
+        href="https://nationaltoday.com/what-is-today/">nationaltoday.com</a>, <a href="https://weather.com/weather/hourbyhour/l/8cd1a4fdf1a3fddbdd025b0f20f49602aa7fc5b410cf85c2866e485bd1e375e4">weather.com</a>, <a
+        href="https://www.astrology.com/">astrology.com<a>, <a href="http://www.thinkablepuzzles.com">thinkablepuzzles.com</a></p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/darktoggle.js') }}"></script>
+  </body>
+
+</html>
